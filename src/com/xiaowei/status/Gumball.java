@@ -90,4 +90,9 @@ public class Gumball {
     public void setState(State state) {
         this.state = state;
     }
+
+    @Override
+    public String toString() {
+        return "hello gumball";
+    }
 }
