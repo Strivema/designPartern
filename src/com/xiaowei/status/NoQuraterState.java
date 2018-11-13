@@ -14,21 +14,22 @@ public class NoQuraterState implements State{
     @Override
     public void insertQuarter() {
         System.out.println("insert");
+        gumball.setState(gumball.getHasQuarterState());
 
     }
 
     @Override
     public void ejectQuarter() {
-
+        System.out.println("no money");
     }
 
     @Override
     public void turnCrank() {
-
+        System.out.println("no money-turn");
     }
 
     @Override
     public void dispence() {
-
+        System.out.println("you must pay");
     }
 }
