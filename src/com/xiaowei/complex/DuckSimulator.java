@@ -7,6 +7,15 @@ package com.xiaowei.complex;
 public class DuckSimulator {
     public static void main(String[] args) {
         new DuckSimulator().simulator();
+        AbstractDuck duck = new CountingFactory();
+        new DuckSimulator().simulator(duck);
+        System.out.println(QuackCounter.getNum());
+    }
+    void simulator(AbstractDuck abstractDuck){
+        Quarkable mall = abstractDuck.createMallardDuck();
+        Quarkable red = abstractDuck.createRedHeadDuck();
+        simulator(mall);
+        simulator(red);
     }
     void simulator(){
         Quarkable malllaardDuck = new MallardDuck();
