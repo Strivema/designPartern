@@ -1,5 +1,7 @@
 package com.xiaowei.complex;
 
+import java.util.Observer;
+
 /**
  * @athour Marie
  * @date 2018/11/13 7:02 PM
@@ -23,5 +25,15 @@ public class GooseAdapter implements Quarkable {
     @Override
     public void quark() {
         goose.honk();
+    }
+
+    @Override
+    public void registter(Observer observer) {
+
+    }
+
+    @Override
+    public void notifyObserver() {
+
     }
 }
